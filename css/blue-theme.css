@@ -1,0 +1,94 @@
+.blue-theme .btn {
+    background: #4d5bed;
+    color: white;
+  }
+  .blue-theme .iaw {
+    background-color: #4d5bed;
+  }
+  
+  .blue-theme .header ul.navbar-nav > li.nav-item.active > a::after {
+    background-color: #4d5bed;
+  }
+  
+  .blue-theme .BackTo {
+    background: #4d5bed none repeat scroll 0 0;
+  }
+  .blue-theme .single-intro-text .count-number {
+    background: #4d5bed;
+  }
+  .blue-theme a {
+    color: #4d5bed;
+  }
+  .blue-theme .process-items .process-icon {
+    border: 4px solid #4d5bed;
+  }
+  
+  .blue-theme .final-icon {
+    background-color: #4d5bed;
+  }
+  
+  .blue-theme .process-container ul .process-items .process-icon::after, 
+  .blue-theme .process-container ul .process-items .process-icon::before {
+    background-color: #4d5bed;
+  }
+  
+  .blue-theme .process-items h4 {
+    color: #1c1c24;
+  }
+  
+  .blue-theme .section-title, .blue-theme .column-title {
+    color: #1c1c24;
+  }
+  
+  .blue-theme .post-meta .post-meta-date {
+    color: #4d5bed;
+  }
+  
+  .blue-theme .post .post-body .entry-header .entry-title a {
+    color: #1c1c24;
+  }
+  
+  .blue-theme .ts-footer-social ul li a:hover {
+    background: #4d5bed;
+    border-color: #4d5bed;
+  }
+  
+  .blue-theme .header.header-transparent {
+    background-color: #170b59d9;
+}
+  
+  .blue-theme .gallery-slider .owl-nav > div {
+    color: #4d5bed;
+  }
+  
+  .blue-theme .gradient:before {
+    background-image: linear-gradient( 144deg, #3f0a88 0%, #200fac 51%, #4300f8 100%, #281849 100% );
+  }
+  
+  
+  .blue-theme .section-title:after, .column-title:after {
+  
+    background-image: url(../images/shap/title-blue.png);
+  }
+
+  .blue-theme .header.sticky {
+    background: #19114fe8 !important;
+}
+
+.blue-theme .ts-newsletter:before, .ts-newsletter:after {
+  background: url(../images/shap/subscribe_slice_left-blue.png) no-repeat;
+}
+
+.blue-theme .ts-newsletter:after {
+  background: url(../images/shap/subscribe_slice_right-blue.png) no-repeat;
+  left: auto;
+  right: -10px;
+}
+
+.blue-theme .ts-newsletter {
+  background-color: #2d1d7e;
+}
+
+.blue-theme .ts-footer {
+  background: #19114f;
+}
