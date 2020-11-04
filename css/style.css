@@ -4258,6 +4258,39 @@ faq-item
   bottom: 0;
   left: 0;
 }
-
-
-
+.coming-soon-container .iaw {
+  background-color: #00000038 !important;
+  font-size: 12px;
+  border-radius: 34px;
+  padding: 2px 16px;
+}
+.mh-100vh{
+  min-height: 100vh;
+}
+.coming-soon-container{
+  min-height: 100vh !important;
+  overflow: hidden;
+}
+.coming-soon-container .banner-content-wrap {
+  left: 0 !important;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+}
+@media (max-width: 1200px) and (min-width: 992px){
+.hero-area.centerd-item .banner-item:after {
+    width: 88% !important;
+    height: 97% !important;
+}
+}
+@media (max-width: 767px){
+  .hero-area.centerd-item .banner-item:after {
+    width: 93% !important;
+    height: 96% !important;
+}
+}
+.countdown {
+  transform: scale(0.76);
+}
+.coming-soon-logo{
+  max-width: 350px;
+}
