@@ -4267,9 +4267,11 @@ faq-item
 .mh-100vh{
   min-height: 100vh;
 }
-.coming-soon-container{
+.coming-soon-container {
   min-height: 100vh !important;
   overflow: hidden;
+  align-items: center;
+  display: flex;
 }
 .coming-soon-container .banner-content-wrap {
   left: 0 !important;
