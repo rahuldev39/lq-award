@@ -3191,7 +3191,7 @@ img.pull-right {
 /* Page banner area */
 .page-banner-area {
   position: relative;
-  min-height: 400px;
+  min-height: 320px;
   color: #fff;
   background-position: 50% 50%;
   -webkit-background-size: cover;
@@ -3207,7 +3207,7 @@ img.pull-right {
 }
 .page-banner-title h2 {
   color: #fff;
-  font-size: 60px;
+  font-size: 44px;
   text-transform: uppercase;
   font-weight: 800;
   margin-bottom: 20px;
