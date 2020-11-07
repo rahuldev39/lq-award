@@ -3191,7 +3191,7 @@ img.pull-right {
 /* Page banner area */
 .page-banner-area {
   position: relative;
-  min-height: 320px;
+  min-height: 256px;
   color: #fff;
   background-position: 50% 50%;
   -webkit-background-size: cover;

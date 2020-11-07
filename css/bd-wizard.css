@@ -1,182 +1,298 @@
-#msform {
-  text-align: center;
+.form-control, .custom-file-label {
+  width: 100%;
+  display: block;
+  border: 1px solid #ebebeb;
+  height: 50px;
+  box-sizing: border-box;
+  padding: 9px 20px;
+  color: #222;
+  font-size: 14px;
+  border-radius: 0px;
+}
+.custom-file label{
+  line-height: 30px;
+}
+.custom-file-input:lang(en)~.custom-file-label::after {
+  content: "Browse";
+  height: 48px;
+  line-height: 50px;
+  padding: 0px 15px;
+  border-radius: 0px;
+}
+.achievements li a.nav-link {
+  font-size: 14px;
+  color: #4d5bed;
+  padding: 4px 16px;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #fff;
+  background-color: #4d5bed;
+}
+.achievements li a.nav-link
+.form-control:focus, .custom-file-input:focus ~ .custom-file-label{
+  box-shadow: none;
+}
+.form-group{
+  margin-bottom: 30px;
+}
+.form-group label {
+  font-size: 14px;
+  color: #16161b;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+.vertical {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 350px 1fr;
+}
+.vertical .steps {
+  grid-row: 1/3;
+  padding: 3rem;
+}
+
+.steps ul {
+  position: relative;
+  list-style-type: none;
+}
+.steps ul li {
+  padding-bottom: 40px;
   position: relative;
 }
-#msform fieldset .form-card {
-    position: relative;
+.steps ul li:last-child{
+ 
 }
-
-#msform fieldset {
-  background: white;
-  border: 0 none;
-  border-radius: 0.5rem;
-  box-sizing: border-box;
-  width: 100%;
-  margin: 0;
-  padding-bottom: 20px;
-  position: relative
+.steps ul li a {
+  text-decoration: none;
+  color: #222;
 }
-
-#msform fieldset:not(:first-of-type) {
-  display: none
-}
-
-#msform fieldset .form-card {
-  text-align: left;
-  color: #9E9E9E
-}
-
-
-
-.wizard-container {
+.steps ul li:after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 100%;
+  background: #ebebeb;
+  left: 20px;
+  bottom: calc(100% - 40px);
   z-index: 0;
 }
-
-.fs-title {
-  font-size: 25px;
-  color: #2C3E50;
-  margin-bottom: 10px;
-  font-weight: bold;
-  text-align: left
-}
-
-#progressbar {
-  margin-bottom: 30px;
-  overflow: hidden;
-  color: lightgrey
-}
-
-#progressbar .active {
-  color: #000000
-}
-
-#progressbar li {
-  list-style-type: none;
-  font-size: 12px;
-  width: 20%;
-  float: left;
-  position: relative
-}
-#progressbar #personal:before {
-  font-family: FontAwesome;
-  content: "\f007"
-}
-#progressbar #contact:before {
-  font-family: FontAwesome;
-  content: "\f2b9"
-}
-#progressbar #professional:before {
-  font-family: FontAwesome;
-  content: "\f19c"
-}
-
-#progressbar #achivement:before {
-  font-family: FontAwesome;
-  content: "\f091"
-}
-
-#progressbar #about-me:before {
-  font-family: FontAwesome;
-  content: "\f234"
-}
-
-#progressbar li:before {
-  width: 50px;
-  height: 50px;
-  line-height: 45px;
-  display: block;
-  font-size: 18px;
-  color: #ffffff;
-  background: lightgray;
-  border-radius: 10px;
-  margin: 0 auto 10px auto;
-  padding: 2px
-}
-
-#progressbar li:after {
-  content: '';
-  width: 100%;
-  height: 2px;
-  background: lightgray;
-  position: absolute;
-  left: 0;
-  top: 25px;
-  z-index: -1
-}
-
-#progressbar li.active:before, #progressbar li.active:after {
+.steps ul li.done:after, .steps ul li.current:after{
   background: #4d5bed;
 }
-.radio-group {
-  position: relative;
-  margin-bottom: 25px
+.steps ul li:first-child:after{
+  display: none;
 }
-
-.radio {
-  display: inline-block;
-  width: 204;
-  height: 104;
-  border-radius: 0;
-  background: lightblue;
-  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
-  box-sizing: border-box;
-  cursor: pointer;
-  margin: 8px 2px
+.title {
+  align-items: center;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -o-align-items: center;
+  -ms-align-items: center;
 }
-
-.radio:hover {
-  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3)
-}
-
-.radio.selected {
-  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1)
-}
-
-.fit-image {
-  width: 100%;
-  object-fit: cover
-}
-.wizard-container {
-  max-width: 900px;
-  margin-top: -85px;
-  background-color: white;
-  padding: 40px 36px;
-  border-radius: 10px;
-  position: relative;
-}
-.wizard-title {
-  text-align: center;
-  font-size: 25px;
-  margin-bottom: 44px;
-}
-
-.wizard-title::after {
-  content: "";
-  height: 2px;
-  width: 30px;
-  background-color: #4d5bed;
-  display: block;
-  margin: 0 auto;
-  margin-top: 16px;
-}
-.form-card .form-group label {
-  font-weight: 500;
-  font-size: 14px;
-  color: #1c1c24;
-  margin-bottom: 4px;
-}
-.form-control {
+.title .step-number {
+  width: 40px;
   height: 40px;
-  font-size: 15px;
-  font-weight: 300;
+  align-items: center;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -o-align-items: center;
+  -ms-align-items: center;
+  justify-content: center;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  -o-justify-content: center;
+  -ms-justify-content: center;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  background: #ebebeb;
+  color: #999;
+  margin-right: 15px;
+  border: 5px solid #fff;
+  font-weight: bold;
+  display: inline-flex;
+  position: relative;
+    z-index: 1;
 }
-.wizard-footer {
-  padding-top: 27px;
-  border-top: 1px solid #dfdfdf;
-  margin-top: 35px;
+.title .step-text {
+  font-weight: bold;
+  color: #999;
 }
-@media (max-width:580px){
-  #progressbar li strong{
-    display: none;
+
+.current .title .step-number, 
+.steps ul li.done .step-number{
+  background: #4d5bed;
+  color: #fff;
+}
+.current .title .step-text,
+.steps ul li.done .step-text
+{
+  color: #4d5bed;
+}
+
+.content h3 {
+  display: none;
+}
+.content{
+  padding: 3rem;
+}
+.actions{
+  padding: 0 3rem 3rem 3rem ;
+}
+.content,
+.actions {
+  background: #f8f8f8;
+}
+
+
+.actions ul {
+  list-style-type: none;
+  display: flex;
+}
+.actions ul .disabled {
+  display: none;
+}
+.actions ul li {
+  margin-left: auto;
+}
+.actions ul li:first-child {
+  margin-left: 0px;
+}
+.actions ul li:first-child a {
+  background: #e8e8e8;
+  color: #999;
+}
+.actions ul li a {
+  width: 140px;
+  height: 50px;
+  color: #fff;
+  background: #4d5bed;
+  align-items: center;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -o-align-items: center;
+  -ms-align-items: center;
+  justify-content: center;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  -o-justify-content: center;
+  -ms-justify-content: center;
+  text-decoration: none;
+  display: flex;
+  border-radius: 4px;
+}
+
+.submit {
+  width: 150px;
+  background: #666;
+  color: #fff;
+  font-weight: 400;
+  cursor: pointer;
+}
+.submit:hover {
+  background-color: #4d4d4d;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: calc(100% - 40px);
+    max-width: 100%;
+  }
+
+  .vertical .steps,
+  .vertical .content,
+  .vertical .actions {
+    float: none;
+    width: 100%;
+  }
+
+  #find_bank {
+    width: 100%;
+  }
+
+  .form-radio-flex input + label {
+    width: 190px;
+    height: 120px;
   }
 }
+@media screen and (max-width: 992px) {
+  .content {
+    height: 900px;
+  }
+
+  .form-radio-flex input + label {
+    width: 100px;
+    height: 65px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #steps-uid-0-p-0 .form-row,
+  #steps-uid-0-p-0 .form-group,
+  #steps-uid-0-p-0 .form-date {
+    width: 100%;
+  }
+
+  .form-flex {
+    flex-direction: column;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -o-flex-direction: column;
+    -ms-flex-direction: column;
+    margin: 0px;
+  }
+
+  .form-flex .form-group {
+    padding: 0px;
+  }
+
+  fieldset,
+  .actions ul {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  #slider-margin .noUi-pips {
+    width: 94%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .form-date-group,
+  .form-find {
+    flex-direction: column;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -o-flex-direction: column;
+    -ms-flex-direction: column;
+  }
+
+  .content {
+    height: 1050px;
+  }
+
+  #find_bank {
+    margin-bottom: 20px;
+  }
+
+  .actions ul li a {
+    width: 100px;
+  }
+
+  .form-radio-flex {
+    margin: 0 -5px;
+  }
+
+  .form-radio-flex .form-radio-item {
+    padding: 0 5px;
+  }
+
+  .form-radio-flex input + label {
+    width: 90px;
+    height: 61px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
