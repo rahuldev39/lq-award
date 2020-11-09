@@ -46,7 +46,7 @@
   width: 100%;
   overflow: hidden;
   display: grid;
-  grid-template-columns: 350px 1fr;
+  grid-template-columns: 315px 1fr;
 }
 .vertical .steps {
   grid-row: 1/3;
@@ -58,7 +58,7 @@
   list-style-type: none;
 }
 .steps ul li {
-  padding-bottom: 40px;
+  padding-bottom: 35px;
   position: relative;
 }
 .steps ul li:last-child{
@@ -222,34 +222,43 @@
   }
 }
 @media screen and (max-width: 992px) {
-  .content {
-    height: 900px;
-  }
 
-  .form-radio-flex input + label {
-    width: 100px;
-    height: 65px;
-  }
+  .vertical {
+    grid-template-columns: 1fr;
+}
+.steps ul {
+  display: flex;
+  justify-content: center;
+}
+.steps ul li {
+  padding-bottom: 0px;
+  text-align: center;
+  padding: 0px 15px;
+}
+.title .step-text {
+  display: block;
+  font-size: 14px;
+}
+.steps ul li:after {
+  width: 100%;
+  height: 2px;
+  left: auto;
+  right: 50%;
+  top: 20px;
+}
+.title .step-number{
+  margin-right: 0px;
+}
 }
 @media screen and (max-width: 768px) {
-  #steps-uid-0-p-0 .form-row,
-  #steps-uid-0-p-0 .form-group,
-  #steps-uid-0-p-0 .form-date {
-    width: 100%;
-  }
 
-  .form-flex {
-    flex-direction: column;
-    -moz-flex-direction: column;
-    -webkit-flex-direction: column;
-    -o-flex-direction: column;
-    -ms-flex-direction: column;
-    margin: 0px;
-  }
 
-  .form-flex .form-group {
-    padding: 0px;
-  }
+  .title .step-text {
+    display: none;
+}
+.steps ul li {
+  padding: 0px 20px;
+}
 
   fieldset,
   .actions ul {
@@ -257,44 +266,18 @@
     padding-right: 30px;
   }
 
-  #slider-margin .noUi-pips {
-    width: 94%;
-  }
 }
-@media screen and (max-width: 480px) {
-  .form-date-group,
-  .form-find {
-    flex-direction: column;
-    -moz-flex-direction: column;
-    -webkit-flex-direction: column;
-    -o-flex-direction: column;
-    -ms-flex-direction: column;
-  }
+@media screen and (max-width: 512px) {
+ 
 
-  .content {
-    height: 1050px;
-  }
+  .steps ul li {
+    padding: 0px 12px;
+}
 
-  #find_bank {
-    margin-bottom: 20px;
-  }
-
-  .actions ul li a {
-    width: 100px;
-  }
-
-  .form-radio-flex {
-    margin: 0 -5px;
-  }
-
-  .form-radio-flex .form-radio-item {
-    padding: 0 5px;
-  }
-
-  .form-radio-flex input + label {
-    width: 90px;
-    height: 61px;
-  }
+.actions ul li a {
+  width: 100px;
+  height: 38px;
+}
 }
 
 /*# sourceMappingURL=style.css.map */
