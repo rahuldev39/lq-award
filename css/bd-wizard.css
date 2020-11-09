@@ -1,13 +1,13 @@
 .form-control, .custom-file-label {
-  width: 100%;
-  display: block;
-  border: 1px solid #ebebeb;
-  height: 50px;
-  box-sizing: border-box;
-  padding: 9px 20px;
-  color: #222;
-  font-size: 14px;
-  border-radius: 0px;
+    width: 100%;
+    display: block;
+    border: 1px solid #cdcdcd;
+    height: 50px;
+    box-sizing: border-box;
+    padding: 9px 20px;
+    color: #222;
+    font-size: 15px;
+    border-radius: 0px;
 }
 .custom-file label{
   line-height: 30px;
@@ -122,8 +122,10 @@
   font-weight: bold;
   color: #999;
 }
-
-.current .title .step-number, 
+.current .title .step-number {
+  background: #5a35c9;
+  color: #fff;
+}
 .steps ul li.done .step-number{
   background: #4d5bed;
   color: #fff;
