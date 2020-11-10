@@ -4296,3 +4296,34 @@ faq-item
 .coming-soon-logo{
   max-width: 350px;
 }
+
+.custom-list{
+
+}
+
+
+.custom-list li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 15px;
+  color: #3f3d56e0;
+}
+.custom-list li::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  top: 5px;
+  color: #3f3d56f0;
+  font-size: 15px;
+}
+.custom-list.custom-list li::after{
+  content: "\f192";
+}
+.box-list li{
+
+}
