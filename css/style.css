@@ -4300,13 +4300,13 @@ faq-item
 .custom-list{
 
 }
-
-
 .custom-list li {
   position: relative;
-  padding-left: 24px;
+  padding-left: 16px;
   margin-bottom: 15px;
-  color: #3f3d56e0;
+
+  padding-bottom: 15px;
+  border-bottom: 1px solid #f3f3f3;
 }
 .custom-list li::after {
   content: "";
@@ -4318,12 +4318,56 @@ faq-item
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   top: 5px;
-  color: #3f3d56f0;
+  color: #000000f0;
   font-size: 15px;
 }
 .custom-list.custom-list li::after{
-  content: "\f192";
+  content: "\f101";
 }
 .box-list li{
 
+}
+
+
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*/
+.nav-pills-custom .nav-link {
+  color: #f5f5f569;
+  background: #4d5bed;
+  position: relative;
+}
+
+.nav-pills-custom .nav-link.active {
+  color: #4d5bed;
+  background: #fff;
+}
+
+
+/* Add indicator arrow for the active tab */
+@media (min-width: 992px) {
+  .nav-pills-custom .nav-link::before {
+      content: '';
+      display: block;
+      border-top: 8px solid transparent;
+      border-left: 10px solid #fff;
+      border-bottom: 8px solid transparent;
+      position: absolute;
+      top: 50%;
+      right: -10px;
+      transform: translateY(-50%);
+      opacity: 0;
+  }
+}
+
+.nav-pills-custom .nav-link.active::before {
+  opacity: 1;
+}
+.categories-tabs{
+  background-image: url(../images/hero_area/blur_img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
