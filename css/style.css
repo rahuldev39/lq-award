@@ -1661,6 +1661,7 @@ img.pull-right {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  height: 100%;
 }
 
 .ts-exp-wrap {
@@ -2614,9 +2615,8 @@ img.pull-right {
 .ts-map-direction .speaker-shap .shap4 {
   left: auto;
   right: 0;
-  top: 200px;
+  top: 15%;
 }
-
 .ts-map-direction .speaker-shap .shap2 {
   right: 40px;
 }
@@ -4301,12 +4301,12 @@ faq-item
 
 }
 
-
 .custom-list li {
   position: relative;
   padding-left: 24px;
-  margin-bottom: 15px;
-  color: #3f3d56e0;
+  margin-bottom: 11px;
+  font-weight: 200;
+  font-size: 15px;
 }
 .custom-list li::after {
   content: "";
@@ -4318,7 +4318,6 @@ faq-item
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   top: 5px;
-  color: #3f3d56f0;
   font-size: 15px;
 }
 .custom-list.custom-list li::after{
@@ -4326,4 +4325,15 @@ faq-item
 }
 .box-list li{
 
+}
+
+.cateegory-header {
+  padding-top: 130px;
+  padding-bottom: 30px;
+}
+.text-light {
+  color: #ffffffc2 !important;
+}
+.info-box{
+  max-width: 450px;
 }
