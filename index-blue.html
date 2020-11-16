@@ -47,14 +47,14 @@
 
 </head>
 
-<body class="blue-theme">
+<body class="blue-theme bg-black">
    <div class="body-inner">
       <!-- Header start -->
       <header id="header" class="header header-transparent">
-         <div class="container">
+         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light">
                <!-- logo-->
-               <a class="navbar-brand d-none" href="index.html">
+               <a class="navbar-brand" href="index.html">
                   <img src="images/fi-lq-logo.png" width="300" alt="">
                </a>
                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -62,14 +62,14 @@
                   <span class="navbar-toggler-icon"><i class="icon icon-menu"></i></span>
                </button>
                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                  <ul class="navbar-nav">
-                     <li class="nav-item active">
+                  <ul class="navbar-nav ml-auto navbar-right">
+                     <li class="dropdown nav-item active">
                         <a href="#" class="">Home</a>
                      </li>
-                     <li class=" nav-item ">
-                        <a href="#" class="">About</a>
-                     </li>
                      <li class="dropdown nav-item ">
+                        <a href="#" class="">About</a>
+					 </li>
+					 <li class="dropdown nav-item ">
                         <a href="#" class="" data-toggle="dropdown">Award Categories <i class="fa fa-angle-down"></i></a>
                            <ul class="dropdown-menu" role="menu">
                               <li><a href="./category1.html">Top-25 In-House Lawyers</a></li>
@@ -81,15 +81,14 @@
                         </ul>
                         
                      </li>
-                     <li class="nav-item ">
+                     <li class="dropdown nav-item ">
                         <a href="#" class="">Jury</a>
                      </li>
-                     <li class="nav-item ">
+                     <li class="dropdown nav-item ">
                         <a href="#" class="">Schedule</a>
                      </li>
-                  </ul>
-                  <ul class="navbar-nav ml-auto navbar-right">
-                     <li class="nav-item ">
+        
+                     <li class="dropdown nav-item ">
                         <a href="#" class="">Sign In</a>
                      </li>
                      <li class="header-ticket nav-item">
@@ -103,85 +102,73 @@
       </header>
       <!--/ Header end -->
 
-      <!-- banner start-->
-      <section class="hero-area">
-         <div class="banner-item d-flex align-items-center" style="background-image:url(images/blue-banner-bg.jpg)">
+      <section class="hero-area content-left">
+         <div class="banner-item rounded-lg" style="background-image: url(images/hero-bg.jpg)">
             <div class="container">
-               <div class="d-flex">
-                  <div class="banner-content-wrap">
+               <div class="row">
+                  <div class="col-lg-5">
+                     <div class="banner-content-wrap">
 
-                     <p class="banner-info wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="500ms">
-                        <img src="./images/forbes-india.png" alt="">
-                     </p>
-                     <span class="d-block mb-3">Presents</span>
-                     <h1 class="banner-title wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="700ms">
-                        <img src="./images/legalpowerlist.png" alt="">
-                     </h1>
-                     <span  class="d-block mb-3 iaw">in association width</span>
-                     <div>
-                        <img src="./images/lq-logo-dark.png" width="200" alt="">
+                        <p class="banner-info wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="500ms">
+                           <img src="./images/forbes-india.png" alt="">
+                        </p>
+                        <span class="d-block mb-3">Presents</span>
+                        <h1 class="banner-title wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="700ms">
+                           <img src="./images/legalpowerlist.png" alt="">
+                        </h1>
+                        <span  class="d-block mb-3 iaw">in association width</span>
+                        <div>
+                           <img src="./images/lq-logo-dark.png" width="200" alt="">
+                        </div>
                      </div>
-                  </div>
-                  <!-- Banner content wrap end -->
-                  
-               </div><!-- flex end-->
+                     <!-- Banner content wrap end -->
+                  </div><!-- col end-->
+               </div><!-- row end-->
             </div>
             <!-- Container end -->
          </div>
-         <!-- banner slice image-->
-         <div class="tiles">
-            <div class="tile" data-scale="1.1" data-image="images/hero_area/banner_slices.png"></div>
-         </div>
       </section>
-      <!-- banner end-->
 
-
-      <section class="ts-intro-content">
-         <div class="container">
+      <section class="optional-section section">
+         <div class="container-fluid px-5">
+            <div class="block-content position-relative">
             <div class="row">
-               <div class="col-lg-6">
-						<h2 class="column-title">
-								<span>About</span>
-								Forbes india Presents Legal Powelist 
-							</h2>
-                  <div class="intro-content-text">
-                     <p>
-									World is committed to making participation in the event a harassment free experience for everyone, regardless of level of experience, gender, gender identity and expression
-							</p>
-							<a href="#">Read More</a>
-                  </div><!-- single intro text end-->
-               </div><!-- col end-->
-               <div class="col-lg-6">
-                  <div class="intro-content-img">
-                        <img src="images/cta_img-blue.jpg" class="img-fluid rounded" alt="">
-                  </div>
-               </div><!-- col end-->
+               <div class="col-md-6"> 
+                  <h4 class="text-white">Forbes india Presents</h4>
+                  <h2 class="block-title">
+                     Legal Powelist
+                   </h2>
+                   <p class="block-text text-white">
+                     World is committed to making participation in the event a harassment free experience for everyone, regardless of level of experience, gender, gender identity and expression
+                   </p>
+      
+                   <a href="#">Read More</a>
+               </div>
+               <div class="col-md-6">
+                  <img src="./images/about-bg.png" class="img-fluid" alt="">
+               </div>
+              </div>
             </div><!-- row end-->
-         </div><!-- container end-->
-      </section>
+         </div><!-- container fluid end-->
+       </section>
 
-      <!-- ts intro start -->
-    
-       <section class="ts-intro-item section-bg">
-         <div class="container">
 
+       <section class="category-section section">
+         <div class="container-fluid px-5">
+            <div class="block-content position-relative">
             <div class="row">
-               <div class="col-lg-8 mx-auto">
-                  <h2 class="section-title text-center">
+               <div class="col-md-12"> 
+                 
+                  <h2 class="block-title text-white">
                      Categories
-                  </h2>
-               </div><!-- col end-->
-            </div><!-- row end-->
-
-            <div class="row">
-               
-               <div class="col-lg-12">
-                  <div class="row">
+                   </h2>
+                 
+                   <div class="row">
                      <div class="col-lg-4 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="400ms">
                         <div class="single-intro-text mb-30">
                            <i class="icon icon-speaker"></i>
-                           <h3 class="ts-title">Great Speakers</h3>
-                           <p>
+                           <h3 class="ts-title text-white">Great Speakers</h3>
+                           <p class="text-white">
                               How you transform your business as technology, consumer, habits industry dynamic
                            </p>
                            <span class="count-number">01</span>
@@ -190,8 +177,8 @@
                      <div class="col-lg-4 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="500ms">
                         <div class="single-intro-text mb-30">
                            <i class="icon icon-netwrorking"></i>
-                           <h3 class="ts-title">New People</h3>
-                           <p>
+                           <h3 class="ts-title text-white">New People</h3>
+                           <p class="text-white">
                               How you transform your business as technology, consumer, habits industry dynamic
                            </p>
                            <span class="count-number">02</span>
@@ -201,8 +188,8 @@
                      <div class="col-lg-4 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="600ms">
                         <div class="single-intro-text mb-30">
                            <i class="icon icon-people"></i>
-                           <h3 class="ts-title">Networking</h3>
-                           <p>
+                           <h3 class="ts-title text-white">Networking</h3>
+                           <p class="text-white">
                               How you transform your business as technology, consumer, habits industry dynamic
                            </p>
                            <span class="count-number">03</span>
@@ -211,8 +198,8 @@
                      <div class="col-lg-4 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="700ms">
                         <div class="single-intro-text mb-30">
                            <i class="icon icon-fun"></i>
-                           <h3 class="ts-title">Have Fun</h3>
-                           <p>
+                           <h3 class="ts-title text-white">Have Fun</h3>
+                           <p class="text-white">
                               How you transform your business as technology, consumer, habits industry dynamic
                            </p>
                            <span class="count-number">04</span>
@@ -222,8 +209,8 @@
                      <div class="col-lg-4 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="700ms">
                         <div class="single-intro-text mb-30">
                            <i class="icon icon-fun"></i>
-                           <h3 class="ts-title">Have Fun</h3>
-                           <p>
+                           <h3 class="ts-title text-white">Have Fun</h3>
+                           <p class="text-white">
                               How you transform your business as technology, consumer, habits industry dynamic
                            </p>
                            <span class="count-number">05</span>
@@ -233,143 +220,135 @@
                      <div class="col-lg-4 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="700ms">
                         <div class="single-intro-text mb-30">
                            <i class="icon icon-fun"></i>
-                           <h3 class="ts-title">Have Fun</h3>
-                           <p>
+                           <h3 class="ts-title text-white">Have Fun</h3>
+                           <p class="text-white">
                               How you transform your business as technology, consumer, habits industry dynamic
                            </p>
                            <span class="count-number">06</span>
                         </div><!-- single intro text end-->
                      </div><!-- col end-->
                   </div>
-               </div><!-- col end-->
-
+                   
+               </div>
+              
+              </div>
             </div><!-- row end-->
-         </div><!-- container end-->
-      </section>
-      <!-- ts intro end-->
+         </div><!-- container fluid end-->
+       </section>
 
-      <!-- ts speaker start-->
-      <section id="ts-speakers" class="ts-speakers" style="background-image:url(images/speakers/speaker_bg.png)">
-         <div class="container">
+
+       <section class="award-process-section section">
+         <div class="container-fluid px-5">
+            <div class="block-content position-relative">
             <div class="row">
-               <div class="col-lg-8 mx-auto">
-                  <h2 class="section-title text-center">
-                     <span>Listen to the</span>
+               <div class="col-md-12"> 
+                 
+                  <h2 class="block-title text-white mw-auto text-center">
                      Awards Process
-                  </h2>
-               </div><!-- col end-->
+                   </h2>
+                 
+                   <div class="process-container d-flex mb-5">
+                     <ul class="list-unstyled w-100 d-flex mx-auto align-items-center justify-content-between text-center">
+                        <li class="process-items ">
+                           <div class="process-icon">
+                              <img src="./images/apply.svg" width="50" alt="">
+                           </div>
+                           
+                           <h4 class="text-white">Apply</h4>
+                           <span class="text-white">How you transform your business as technology, consumer, habits industry dynamic</span>
+                        </li>
+                        <li class="process-items">
+                           <div class="process-icon">
+                              <img src="./images/shortlist.svg" width="50" alt="">
+                           </div>
+                           <h4 class="text-white">Shortlisting</h4>
+                           <span class="text-white">How you transform your business as technology, consumer, habits industry dynamic</span>
+                        </li>
+                        <li class="process-items">
+                           <div class="process-icon final-icon">
+                              <img src="./images/award.svg" width="50" alt="">
+                           </div>
+                           <h4 class="text-white">Felicitation</h4>
+                           <span class="text-white">How you transform your business as technology, consumer, habits industry dynamic</span>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+              
+              </div>
             </div><!-- row end-->
-          
-            <div class="process-container d-flex mb-5">
-               <ul class="list-unstyled w-100 d-flex mx-auto align-items-center justify-content-between text-center">
-                  <li class="process-items ">
-                     <div class="process-icon">
-                        <img src="./images/apply.svg" width="50" alt="">
-                     </div>
-                     
-                     <h4>Apply</h4>
-                     <span>How you transform your business as technology, consumer, habits industry dynamic</span>
-                  </li>
-                  <li class="process-items">
-                     <div class="process-icon">
-                        <img src="./images/shortlist.svg" width="50" alt="">
-                     </div>
-                     <h4>Shortlisting</h4>
-                     <span>How you transform your business as technology, consumer, habits industry dynamic</span>
-                  </li>
-                  <li class="process-items">
-                     <div class="process-icon final-icon">
-                        <img src="./images/award.svg" width="50" alt="">
-                     </div>
-                     <h4>Felicitation</h4>
-                     <span>How you transform your business as technology, consumer, habits industry dynamic</span>
-                  </li>
-               </ul>
-            </div>
-
-
-         </div><!-- container end-->
-
-         <!-- shap img-->
-         <div class="speaker-shap">
-            <img class="shap1" src="images/shap/home_speaker_memphis1-blue.png" alt="">
-            <img class="shap2" src="images/shap/home_speaker_memphis2.png" alt="">
-            <img class="shap3" src="images/shap/home_speaker_memphis3.png" alt="">
-         </div>
-         <!-- shap img end-->
-      </section>
-      <!-- ts speaker end-->
+         </div><!-- container fluid end-->
+       </section>
 
     
-
-
-      <!-- ts pricing start-->
-      <section class="ts-pricing gradient" style="background-image: url(images/pricing/pricing_img.jpg)">
-         <div class="container">
+       <section class="gallery-section section">
+         <div class="container-fluid px-5">
+            <div class="block-content position-relative gradient overflow-hidden" style="background-image: url(images/pricing/pricing_img.jpg)">
             <div class="row">
-               <div class="col-lg-12">
-                  <h2 class="section-title white">
-                     <span>Previus Moments</span>
+               <div class="col-md-12 text-center"> 
+                  <span class="text-white">Previus Moments</span>
+                  <h2 class="block-title text-white mw-auto ">
                      Video Gallery
-                  </h2>
-               </div><!-- section title end-->
-            </div><!-- col end-->
-            <!-- row end-->
-            <div class="gallery-slider ts-grid-item owl-carousel owl-theme">
-					<div class="grid-item">
-					  <a href="#" class="ts-popup">
-                    <img class="rounded" src="images/gallery/g_img1.jpg" alt="" /></a>
-					</div>
-					
-					<div class="grid-item">
-                  <a href="#" class="ts-popup">
-                     <img class="rounded" src="images/gallery/g_img2.jpg" alt="" /></a>
-					</div>
-					<div class="grid-item">
-                  <a href="#" class="ts-popup">
-                     <img class="rounded" src="images/gallery/g_img3.jpg" alt="" /></a>
-					</div>
-					<div class="grid-item">
-                  <a href="#" class="ts-popup">
-                     <img class="rounded" src="images/gallery/g_img4.jpg" alt="" /></a>
-					</div>
-					<div class="grid-item">
-                  <a href="#" class="ts-popup">
-                     <img class="rounded" src="images/gallery/g_img5.jpg" alt="" /></a>
-					</div>
-					<div class="grid-item">
-                  <a href="#" class="ts-popup">
-                     <img class="rounded" src="images/gallery/g_img6.jpg" alt="" /></a>
-					</div>
-					<div class="grid-item">
-                  <a href="#" class="ts-popup">
-                     <img class="rounded" src="images/gallery/g_img7.jpg" alt="" /></a>
-					</div>
-					<div class="grid-item">
-                  <a href="#" class="ts-popup">
-                     <img class="rounded" src="images/gallery/g_img8.jpg" alt="" /></a>
-					</div>
-				 </div>
-         </div><!-- container end-->
-         <div class="speaker-shap wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="400ms">
-            <img class="shap2" src="images/shap/pricing_memphis1.png" alt="">
-         </div>
-      </section>
-      <!-- ts pricing end-->
+                   </h2>
+                 
+                   <div class="gallery-slider ts-grid-item owl-carousel owl-theme my-5 pt-5">
+                     <div class="grid-item">
+                       <a href="#" class="ts-popup">
+                          <img class="rounded" src="images/gallery/g_img1.jpg" alt="" /></a>
+                     </div>
+                     
+                     <div class="grid-item">
+                        <a href="#" class="ts-popup">
+                           <img class="rounded" src="images/gallery/g_img2.jpg" alt="" /></a>
+                     </div>
+                     <div class="grid-item">
+                        <a href="#" class="ts-popup">
+                           <img class="rounded" src="images/gallery/g_img3.jpg" alt="" /></a>
+                     </div>
+                     <div class="grid-item">
+                        <a href="#" class="ts-popup">
+                           <img class="rounded" src="images/gallery/g_img4.jpg" alt="" /></a>
+                     </div>
+                     <div class="grid-item">
+                        <a href="#" class="ts-popup">
+                           <img class="rounded" src="images/gallery/g_img5.jpg" alt="" /></a>
+                     </div>
+                     <div class="grid-item">
+                        <a href="#" class="ts-popup">
+                           <img class="rounded" src="images/gallery/g_img6.jpg" alt="" /></a>
+                     </div>
+                     <div class="grid-item">
+                        <a href="#" class="ts-popup">
+                           <img class="rounded" src="images/gallery/g_img7.jpg" alt="" /></a>
+                     </div>
+                     <div class="grid-item">
+                        <a href="#" class="ts-popup">
+                           <img class="rounded" src="images/gallery/g_img8.jpg" alt="" /></a>
+                     </div>
+                   </div>
+               </div>
+              
+              </div>
+            </div><!-- row end-->
+         </div><!-- container fluid end-->
+       </section>
+
+
+   
       <!-- ts blog start-->
-      <section class="ts-blog section-bg">
+      <section class="ts-blog ">
          <div class="container">
-            <div class="row">
-               <div class="col-lg-12">
-                  <h2 class="section-title">
-                     <span>Info Update</span>
-                     Latest News
-                  </h2>
+            <div class="row mb-5">
+               <div class="col-lg-12 text-center">
+                  <span class="text-white">Info Update</span>
+                     <h2 class="block-title text-white mw-auto ">
+                        Latest News
+                   </h2>
                </div><!-- col end-->
             </div><!-- row end-->
             <div class="row">
                <div class="col-lg-4 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="400ms">
-                  <div class="post">
+                  <div class="post white-text">
                      <div class="post-media post-image">
                         <a href="#"><img src="images/blog/blog1.jpg" class="img-fluid" alt=""></a>
                      </div>
@@ -402,7 +381,7 @@
                   </div><!-- post end-->
                </div><!-- col end-->
                <div class="col-lg-4 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="500ms">
-                  <div class="post">
+                  <div class="post white-text">
                      <div class="post-media post-image">
                         <a href="#"><img src="images/blog/blog2.jpg" class="img-fluid" alt=""></a>
                      </div>
@@ -435,7 +414,7 @@
                   </div><!-- post end-->
                </div><!-- col end-->
                <div class="col-lg-4 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="600ms">
-                  <div class="post">
+                  <div class="post white-text">
                      <div class="post-media post-image">
                         <a href="#"><img src="images/blog/blog3.jpg" class="img-fluid" alt=""></a>
                      </div>

@@ -27,7 +27,7 @@ jQuery(function ($) {
    $(window).on('scroll', function () {
 
       /**Fixed header**/
-      if ($(window).scrollTop() > 250) {
+      if ($(window).scrollTop() > 0) {
          $('.header').addClass('sticky fade_down_effect');
       } else {
          $('.header').removeClass('sticky fade_down_effect');
