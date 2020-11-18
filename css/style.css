@@ -424,7 +424,9 @@ img.pull-right {
 }
 
 .ts-title {
-  font-size: 24px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  font-weight: 500;
 }
 
 .hidden-title {
@@ -689,7 +691,8 @@ img.pull-right {
   padding: 0px 0;
 }
 .header.sticky .navbar {
-  padding: 0;
+  padding: 0px 0px;
+  min-height: 65px;
 }
 .header.sticky.fade_down_effect {
   -webkit-animation-name: fadeInDown;
@@ -1292,12 +1295,14 @@ img.pull-right {
 .single-intro-text i {
   position: absolute;
   right: -10px;
-  top: 20px;
-  font-size: 55px;
+  top: 10px;
+  font-size: 50px;
   color: #bababa;
 }
 .single-intro-text p {
   margin-bottom: 0;
+  font-size: 21px;
+  font-weight: 500;
 }
 .single-intro-text .count-number {
   position: absolute;
@@ -4184,6 +4189,7 @@ faq-item
   z-index: 1;
   padding: 20px;
   overflow: hidden;
+  flex: 1;
 }
 .process-container ul .process-items:first-child .process-icon::before, 
 .process-container ul .process-items:last-child .process-icon::after
@@ -4493,4 +4499,94 @@ section.section {
   background-repeat: no-repeat;
   left: 0;
   top: 7px;
+}
+
+@media(max-width:1200px){
+  .eligibility-img{
+    display: none;
+  }
+  .eligibility-content::after {
+    width: 100%;
+}
+.eligibility-content .shap1 {
+  right: 34px;
+  left: auto;
+}
+}
+
+@media(max-width:992px){
+  .process-items span{
+    display: none
+  }
+  
+  .page-title {
+    font-size: 65px;
+}
+.page-sub-title {
+  font-size: 25px;
+}
+.block-text {
+  font-size: 18px;
+  line-height: 26px;
+}
+.block-title {
+  font-size: 45px;
+  line-height: 53px;
+}
+.mandatory-section .shap2 {
+  display: none;
+}
+}
+@media(max-width:768px){
+  .process-items .process-icon {
+    height: 70px;
+    width: 70px;
+}
+.process-items .process-icon img {
+  width: 31px;
+}
+  .assessment-section .shap2 {
+    display: none;
+}
+.page-title {
+  font-size: 50px;
+}
+.page-eyebrow {
+  font-size: 23px;
+}
+.page-sub-title {
+  font-size: 18px;
+}
+.block-text {
+  font-size: 16px;
+  line-height: 23px;
+}
+.block-title {
+  font-size: 35px;
+  line-height: 43px;
+}
+.optional-section .shap1{
+  display: none
+}
+section.cateegory-header {
+  padding-top: 119px !important;
+}
+.mandatory-section .shap3 {
+  display: none;
+}
+.section .container-fluid{
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+}
+}
+@media(max-width:530px){
+  .block-content {
+    padding: 66px 15px 60px 15px;
+}
+.banner-content-wrap .banner-title img{
+  width: 100%;
+}
+.blue-theme .process-items h4 {
+  font-size: 16px;
+}
 }
