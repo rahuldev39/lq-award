@@ -24,8 +24,9 @@ tab rotate
   .ts-speaker .speaker-img {
     width: 205px;
     height: 205px; }
-  .speaker-classic .ts-title {
-    font-size: 20px; }
+    .speaker-classic .ts-title {
+      font-size: 17px;
+  }
   .speaker-shap {
     display: none; }
   h2 {
@@ -162,8 +163,9 @@ tab device
       margin-bottom: 40px; }
   .ts-speakers {
     padding-bottom: 40px; }
-  .speaker-classic .ts-speaker {
-    margin-bottom: 40px; }
+    .speaker-classic .ts-speaker {
+      margin-bottom: 80px;
+  }
   .ts-schedule-info ul {
     margin-top: 50px;
     min-height: 215px; }
