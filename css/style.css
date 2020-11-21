@@ -1475,7 +1475,7 @@ img.pull-right {
   -webkit-border-radius: 50%;
   -ms-border-radius: 50%;
   overflow: hidden;
-  margin: auto auto 20px;
+  margin: auto auto 0px;
 }
 .ts-speaker .speaker-img img {
   width: 100%;
@@ -1487,6 +1487,7 @@ img.pull-right {
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
   -ms-transition: all 0.4s ease;
+  filter: grayscale(1) brightness(.8);
 }
 .ts-speaker .speaker-img:before {
   position: absolute;
@@ -1562,7 +1563,7 @@ img.pull-right {
   padding-top: 100px;
 }
 .speaker-classic .ts-speaker {
-  margin-bottom: 90px;
+  margin-bottom: 58px;
 }
 .speaker-classic .ts-speaker .speaker-img {
   width: 100%;
@@ -1572,15 +1573,16 @@ img.pull-right {
   -ms-border-radius: 0;
 }
 .speaker-classic .ts-speaker .ts-speaker-info {
-  position: absolute;
+  /* position: absolute; */
   right: 0;
   bottom: -42px;
   background: #181818;
   z-index: 1;
-  width: 90%;
+  /* width: 90%; */
   padding: 20px 0 10px;
   text-align: right;
   padding-right: 23px;
+  min-height: 104px;
 }
 .speaker-classic .ts-speaker .ts-speaker-info .ts-title {
   margin-bottom: 0;
@@ -1588,7 +1590,7 @@ img.pull-right {
 .speaker-classic .ts-speaker .ts-speaker-info p {
   margin-bottom: 0;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 24px;
 }
 
 .speaker-shap img {
