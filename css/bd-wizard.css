@@ -2,13 +2,13 @@
   width: 100%;
   display: block;
   border: 1px solid #2e2e2e;
-  height: 50px;
+  height: 55px;
   box-sizing: border-box;
   padding: 9px 20px;
-  color: #b9b9b9;
-  font-size: 15px;
+  color: #373737;
+  font-size: 17px;
   border-radius: 0px;
-  background-color: #191919;
+  background-color: #ffffffd6;
 }
 .custom-file-label::after {
   position: absolute;
@@ -20,24 +20,32 @@
   height: calc(1.5em + .75rem);
   padding: .375rem .75rem;
   line-height: 1.5;
-  color: #6f6f6f;
+  color: #353535;
   content: "Browse";
-  background-color: #272727;
+  background-color: #c4c4c4;
   border-left: inherit;
   border-radius: 0 .25rem .25rem 0;
+  font-size: 17px;
+  border-left-color: transparent;
 }
-.custom-file label{
+.custom-file label {
   line-height: 30px;
+  color: #03030370 !important;
+  font-size: 15px !important;
 }
 .custom-file-input:lang(en)~.custom-file-label::after {
   content: "Browse";
-  height: 48px;
+  height: 53px;
   line-height: 50px;
   padding: 0px 15px;
   border-radius: 0px;
 }
-.wizard-header h2 {
+fieldset h2 {
   color: white;
+  margin-bottom: 17px;
+}
+fieldset p.desc {
+  margin-bottom: 30px;
 }
 .achievements li a.nav-link {
   font-size: 14px;
@@ -56,10 +64,10 @@
   margin-bottom: 45px;
 }
 .form-group label {
-  font-size: 14px;
+  font-size: 20px;
   color: #cacaca;
   font-weight: 500;
-  margin-bottom: 2px;
+  margin-bottom: 8px;
 }
 .vertical {
   display: block;
@@ -184,8 +192,9 @@
   margin-left: 0px;
 }
 .actions ul li:first-child a {
-  background: #191919;
-  color: #a7a7a7;
+  background: #0d0d0d;
+  color: #ffffff;
+  border: 1px solid white;
 }
 .actions ul li a {
   width: 140px;
