@@ -2942,9 +2942,9 @@ img.pull-right {
 /*================================
       ts-footer
  ==================================*/
-.ts-footer {
+ .ts-footer {
   background: #1a1831;
-  padding: 250px 0 50px;
+  padding: 80px 0 50px;
 }
 
 .ts-footer-social ul {
@@ -3394,6 +3394,8 @@ img.pull-right {
   border-radius: 0;
   font-size: 14px;
   resize: none;
+  background-color: #121212;
+  border: 1px solid #ffffff1a;
 }
 
 /* Blog Details
@@ -4611,4 +4613,11 @@ section.cateegory-header {
   line-height: 70px;
   font-family: "Roboto", sans-serif;
   color: #fc6373;
+}
+@media (max-width:480px){
+  .ts-speakers.speaker-classic .row > div {
+    flex-basis: 100%;
+    max-width: 85%;
+    margin: 0 auto;
+}
 }
