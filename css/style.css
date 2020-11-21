@@ -1901,9 +1901,9 @@ img.pull-right {
   flex-direction: row;
 }
 .schedule-listing .schedule-slot-time {
-  background: #d20055;
+  background: #3d48cc;
   color: #fff;
-  padding: 60px 28px;
+  padding: 45px 28px;
   font-size: 18px;
   font-weight: 700;
   -webkit-box-flex: 0;
@@ -1913,12 +1913,13 @@ img.pull-right {
 }
 .schedule-listing .schedule-slot-time span {
   display: block;
-  line-height: 26px;
+  line-height: 37px;
+  font-size: 30px;
 }
 .schedule-listing .schedule-slot-info {
   position: relative;
-  padding: 35px 40px 35px 170px;
-  border: 1px dashed #e5e5e5;
+  padding: 30px;
+  border: 1px dashed #e5e5e52b;
   border-left: none;
   width: 100%;
 }
@@ -1936,6 +1937,7 @@ img.pull-right {
 }
 .schedule-listing .schedule-slot-info .schedule-slot-title {
   font-size: 24px;
+  color: white;
 }
 .schedule-listing .schedule-slot-info .schedule-slot-title strong {
   font-size: 14px;
@@ -1946,10 +1948,10 @@ img.pull-right {
   margin-bottom: 0;
 }
 .schedule-listing:hover .schedule-slot-title {
-  color: #3b1d82;
+  color: #ffffffcf;
 }
 .schedule-listing:nth-of-type(even) .schedule-slot-time {
-  background: #e7015e;
+  background: #4d5bed;
 }
 .schedule-listing.launce .schedule-slot-time {
   padding: 40px 28px;
