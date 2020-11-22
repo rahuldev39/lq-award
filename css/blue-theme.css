@@ -4,8 +4,8 @@
   }
   .blue-theme .iaw {
     background-color: #03030324;
+    max-width: 390px;
 }
-  
   .blue-theme .header ul.navbar-nav > li.nav-item.active > a::after {
     background-color: #4d5bed;
   }

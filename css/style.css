@@ -1125,15 +1125,12 @@ img.pull-right {
 }
 
 .hero-area.content-left .banner-item {
-  margin: 0px 50px 0;
   min-height: 650px;
   -webkit-box-shadow: 0px 100px 100px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 100px 100px 0px rgba(0, 0, 0, 0.2);
   background-position: top center;
 }
-.hero-area.content-left .banner-item .banner-content-wrap {
-  padding: 50px 0;
-}
+
 .hero-area.content-left .banner-item .banner-content-wrap .title-shap-img {
   margin-bottom: 20px;
   max-width: 70px;
@@ -4527,6 +4524,9 @@ section.section {
 }
 
 @media(max-width:992px){
+  .home-banner .banner-item .block-text {
+    max-width: 405px !important;
+}
   .process-items span{
     display: none
   }
@@ -4554,6 +4554,9 @@ section.section {
     height: 70px;
     width: 70px;
 }
+.home-banner .banner-item .block-text {
+  max-width: 352px !important;
+}
 .process-items .process-icon img {
   width: 31px;
 }
@@ -4574,7 +4577,7 @@ section.section {
   line-height: 23px;
 }
 .block-title {
-  font-size: 35px;
+  font-size: 35px !important;
   line-height: 43px;
 }
 .optional-section .shap1{
@@ -4620,4 +4623,107 @@ section.cateegory-header {
     max-width: 85%;
     margin: 0 auto;
 }
+}
+
+
+.home-banner.owl-carousel .owl-item img {
+  width: auto;
+}
+.home-banner .owl-item{
+  height: 100%;
+}
+
+.home-banner .block-title{
+  max-width: initial;
+}
+.home-banner .banner-item .banner-title {
+  font-size: 66px;
+}
+.home-banner .banner-item .block-text{
+  max-width: 560px;
+}
+.home-banner .banner-item.banner-1 .banner-title{
+  color: #FC6572;
+}
+.home-banner .banner-item.banner-1 .btn {
+  background-color: #FC6572 !important;
+} 
+
+.home-banner .banner-item.banner-2 .banner-title{
+  color: #FFBD5A;
+}
+.home-banner .banner-item.banner-2 .btn {
+  background-color: #FFBD5A !important;
+  color: #000;
+}
+
+.home-banner .banner-item.banner-3 .banner-title{
+  color: #0EB4BE;
+}
+.home-banner .banner-item.banner-3 .btn {
+  background-color: #0EB4BE !important;
+  color: #000;
+}
+
+.home-banner .banner-item.banner-4 .banner-title{
+  color: #FF1E79;
+}
+.home-banner .banner-item.banner-4 .btn {
+  background-color: #FF1E79 !important;
+}
+
+.home-banner .banner-item.banner-5 .banner-title{
+  color: #FFDF5A;
+}
+.home-banner .banner-item.banner-5 .btn {
+  background-color: #FFDF5A !important;
+  color: #000;
+}
+
+.home-banner .banner-item.banner-6 .banner-title{
+  color: #AD7AFF;
+}
+.home-banner .banner-item.banner-6 .btn {
+  background-color: #AD7AFF !important;
+}
+
+.login-bg{
+  background-size: cover;
+  background-position: right;
+}
+
+.login-form .form-group label {
+  font-size: 16px;
+  margin-bottom: 1px;
+}
+.login-bg::after {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  content: "";
+  background-color: #0303038c;
+  left: 0px;
+  top: 0px;
+}
+
+.login-bg .banner-content-wrap{
+  z-index: 100;
+}
+
+.home-banner .owl-nav {
+  position: absolute;
+  right: 34px;
+  display: flex;
+  align-items: center;
+  bottom: 50px;
+}
+.home-banner .owl-nav > div {
+  padding: 4px 13px;
+  background-color: #ffffff12;
+  margin: 1px;
+  font-size: 11px;
+}
+.home-banner .owl-nav > div:hover {
+  background-color: black;
+  color: white;
 }
