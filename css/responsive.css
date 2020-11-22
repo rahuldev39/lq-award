@@ -53,6 +53,11 @@ tab rotate
       .header .navbar {
         padding: 15px 0;
     }
+    .sub-categories li {
+      padding: 4px 8px;
+      font-size: 13px;
+      margin-left: 6px;
+  }
     }
 /*==========================
 tab device 

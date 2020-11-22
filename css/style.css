@@ -4727,3 +4727,11 @@ section.cateegory-header {
   background-color: black;
   color: white;
 }
+.sub-categories li {
+  padding: 6px 15px;
+  color: #ffffff91;
+  border: 2px solid #ffffff1c;
+  margin: 4px 0px;
+  margin-left: 10px;
+  font-size: 15px;
+}
