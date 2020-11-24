@@ -200,13 +200,22 @@
 							<p class="desc">Set up your money limit to reach the future plan</p>
 							<div class="fieldset-content">
 								<div class="row">
+									<div class="col-md-3">
+										<div class="form-group">
+											<label>Education</label>
+											<select class="form-control" name="" id="">
+												<option value="">LL.M</option>
+												<option value="">PhD</option>
+											</select> 	
+										</div>
+									</div>
 									<div class="col-md-6">
 										<div class="form-group">
 											<label>Name of the law college</label>
 											<input class="form-control" type="text" name="name" placeholder="Name of College" /> 	
 										</div>
 									</div>
-									<div class="col-md-6">
+									<div class="col-md-3">
 										<div class="form-group">
 											<label>Passing Year</label>
 											<input class="form-control" type="date" name="name" placeholder="Passing Year" /> 	
@@ -214,27 +223,73 @@
 									</div>
 								</div>
 
-								<div class="row">
-									<div class="col-md-6">
-										<div class="form-group">
-											<label>Higher Education</label>
-											<select class="form-control" name="" id="">
-												<option value="">LL.M</option>
-												<option value="">PhD</option>
-											</select> 	
+								<div class="add-new-container mb-4">
+									<div class="row">
+										<div class="col-md-3 col-lg-3">
+											<div class="form-group mb-3 mb-md-0">
+												<label>Education</label>
+												<select class="form-control" name="" id="">
+													<option value="">LL.M</option>
+													<option value="">PhD</option>
+												</select> 	
+											</div>
+										</div>
+										<div class="col-md-5 col-lg-6">
+											<div class="form-group mb-3 mb-md-0">
+												<label>Name of the law college</label>
+												<input class="form-control" type="text" name="name" placeholder="Name of College" /> 	
+											</div>
+										</div>
+										<div class="col-md-4 col-lg-3">
+											<div class="form-group mb-3 mb-md-0">
+												<label>Passing Year</label>
+												<input class="form-control" type="date" name="name" placeholder="Passing Year" /> 	
+											</div>
 										</div>
 									</div>
-
-									<div class="col-md-6">
-										<div class="form-group">
-											<label>Professional background</label>
-											<div class="custom-file">
-												<input type="file" class="custom-file-input" id="customFile">
-												<label class="custom-file-label" for="customFile">Choose file</label>
-											  </div>	
-										</div>
-									</div>
+									
+									<button class="remove-btn">
+										<i class="fa fa-times" aria-hidden="true"></i>
+									</button>
 								</div>
+
+								<div class="add-new-container mb-4">
+									<div class="row">
+										<div class="col-md-3 col-lg-3">
+											<div class="form-group mb-3 mb-md-0">
+												<label>Education</label>
+												<select class="form-control" name="" id="">
+													<option value="">LL.M</option>
+													<option value="">PhD</option>
+												</select> 	
+											</div>
+										</div>
+										<div class="col-md-5 col-lg-6">
+											<div class="form-group mb-3 mb-md-0">
+												<label>Name of the law college</label>
+												<input class="form-control" type="text" name="name" placeholder="Name of College" /> 	
+											</div>
+										</div>
+										<div class="col-md-4 col-lg-3">
+											<div class="form-group mb-3 mb-md-0">
+												<label>Passing Year</label>
+												<input class="form-control" type="date" name="name" placeholder="Passing Year" /> 	
+											</div>
+										</div>
+									</div>
+									
+									<button class="remove-btn">
+										<i class="fa fa-times" aria-hidden="true"></i>
+									</button>
+								</div>	
+
+
+								<div class="add">
+
+									<button class="btn btn-sm px-3">
+										<i class="fa fa-plus mr-2" aria-hidden="true"></i> Add More</button>
+								</div>
+								
 							</div>
 						</fieldset>
 
@@ -333,48 +388,189 @@
 
 
 						<h3>Some More About Me</h3>
-						<fieldset>
-							<h2>Some More About Me</h2>
-							<p class="desc">Set up your money limit to reach the future plan</p>
-							<div class="fieldset-content">
-								<div class="row">
-									<div class="col-md-12">
-										<div class="form-group">
-											<label>Where do you see yourself in five years time?</label>
-											<input class="form-control" type="text" name="name" placeholder="" /> 	
-										</div>
-									</div>
-									<div class="col-md-12">
-										<div class="form-group">
-											<label>What are your strengths?</label>
-											<input class="form-control" type="date" name="name" placeholder="" /> 	
-										</div>
-									</div>
-								</div>
-
-								<div class="row">
-									<div class="col-md-6">
-										<div class="form-group">
-											<label>Upload a letter of recommendation</label>
-											<div class="custom-file">
-												<input type="file" class="custom-file-input" id="customFile">
-												<label class="custom-file-label" for="customFile">Choose file</label>
-											  </div>	
-										</div>
-									</div>
-
-									<div class="col-md-6">
-										<div class="form-group">
-											<label>Upload the Elevator PPT for Jury</label>
-											<div class="custom-file">
-												<input type="file" class="custom-file-input" id="customFile">
-												<label class="custom-file-label" for="customFile">Choose file</label>
-											  </div>	
-										</div>
-									</div>
+<fieldset>
+	<h2>Some More About Me</h2>
+	<p class="desc">Set up your money limit to reach the future plan</p>
+	<div class="fieldset-content">
+		
+		<div id="accordion" class="checkout">
+			<div class="panel checkout-step">
+				<div class="d-flex align-items-center complete"> 
+					<span class="checkout-step-number">1</span>
+					<h4 class="checkout-step-title"> 
+						<a role="button" data-toggle="collapse"  href="#collapseOne" > 
+							Upload Documents
+						</a>
+					</h4>
+				</div>
+				<div id="collapseOne" class="collapse in" data-parent="#accordion">
+					<div class="checkout-inner">
+						<div class="row">
+						
+							<div class="col-md-6">
+								<div class="form-group">
+									<label>high-resolution picture, preferably a headshot. </label>
+									<div class="custom-file">
+										<input type="file" class="custom-file-input" name="recommendation_letter" id="recommendation_letter">
+										<label class="custom-file-label" for="customFile">Choose file</label>
+										</div>    
 								</div>
 							</div>
-						</fieldset>
+				
+							<div class="col-md-6">
+								<div class="form-group">
+									<label>high-resolution company logo</label>
+									<div class="custom-file">
+										<input type="file" class="custom-file-input" name="jury_ppt" id="jury_ppt">
+										<label class="custom-file-label" for="customFile">Choose file</label>
+										</div>    
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+
+
+
+			<div class="panel checkout-step">
+				<div class="d-flex align-items-center complete" role="tab" id="headingTwo"> <span class="checkout-step-number">2</span>
+					<h4 class="checkout-step-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" > 
+						Name of the organization you work at. Mention the size of the company/firm?
+					</a> 
+				</h4>
+				</div>
+				<div id="collapseTwo" class="panel-collapse collapse" data-parent="#accordion">
+					<div class="checkout-inner">
+						<input class="form-control" type="text" name="after_five_years" id="after_five_years" placeholder="" />   
+					</div>	
+					
+				</div>
+			</div>
+
+
+			<div class="panel checkout-step">
+				<div class="d-flex align-items-center error" role="tab" id="headingThree"> <span class="checkout-step-number">3</span>
+					<h4 class="checkout-step-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"  > 
+						In which year did you enter the legal industry?
+					</a> 
+				</h4>
+				</div>
+				<div id="collapseThree" class="panel-collapse collapse" data-parent="#accordion">
+					<div class="checkout-inner">
+						<input class="form-control valid" type="text" name="strengths" id="strengths" placeholder="" aria-invalid="false">
+					</div>
+					
+				</div>
+			</div>
+
+
+			<div class="panel checkout-step">
+				<div class="d-flex align-items-center complete" role="tab" id="headingFour"> <span class="checkout-step-number">4</span>
+					<h4 class="checkout-step-title"> 
+						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour"  > 
+							PWhich State Bar are you registered with? Provide registration number?
+						</a> 
+					</h4>
+				</div>
+				<div id="collapseFour" class="panel-collapse collapse" data-parent="#accordion">
+					<div class="checkout-inner">
+						<input class="form-control" type="text" name="strengths" id="strengths" placeholder="">
+					</div>
+					
+				</div>
+			</div>
+
+
+			<div class="panel checkout-step">
+				<div class="d-flex align-items-center" role="tab" id="headingFive"> <span class="checkout-step-number">5</span>
+					<h4 class="checkout-step-title"> 
+						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive"  > 
+							Kindly mentionthe current and past practice areas of law that you have specializedin?
+						</a> 
+					</h4>
+				</div>
+				<div id="collapseFive" class="panel-collapse collapse" data-parent="#accordion">
+					<div class="checkout-inner">
+						<input class="form-control" type="text" name="strengths" id="strengths" placeholder="">
+					</div>
+					
+				</div>
+			</div>
+
+			<div class="panel checkout-step">
+				<div class="d-flex align-items-center" role="tab" id="headingSix"> <span class="checkout-step-number">6</span>
+					<h4 class="checkout-step-title"> 
+						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix"  > 
+							List all your professional qualifications, courses and degrees (can be in anyfield, not just legal)?
+						</a> 
+					</h4>
+				</div>
+				<div id="collapseSix" class="panel-collapse collapse" data-parent="#accordion">
+					<div class="checkout-inner">
+						<input class="form-control" type="text" name="strengths" id="strengths" placeholder="">
+					</div>
+					
+				</div>
+			</div>
+
+			<div class="panel checkout-step">
+				<div class="d-flex align-items-center" role="tab" id="headingSeven"> <span class="checkout-step-number">7</span>
+					<h4 class="checkout-step-title"> 
+						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven"  > 
+							Are you currently a member of anylaw association(s)? If yes, then kindly specify the name(s)?
+						</a> 
+					</h4>
+				</div>
+				<div id="collapseSeven" class="panel-collapse collapse" data-parent="#accordion">
+					<div class="checkout-inner">
+						<input class="form-control" type="text" name="strengths" id="strengths" placeholder="">
+					</div>
+					
+				</div>
+			</div>
+
+			<div class="panel checkout-step">
+				<div class="d-flex align-items-center" role="tab" id="headingEight"> <span class="checkout-step-number">8</span>
+					<h4 class="checkout-step-title"> 
+						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight"  > 
+							Kindly list any external groups, associations, boards or bodies that you are a memberof?
+						</a> 
+					</h4>
+				</div>
+				<div id="collapseEight" class="panel-collapse collapse" data-parent="#accordion">
+					<div class="checkout-inner">
+						<input class="form-control" type="text" name="strengths" id="strengths" placeholder="">
+					</div>
+					
+				</div>
+			</div>
+
+			<div class="panel checkout-step">
+				<div class="d-flex align-items-center" role="tab" id="headingNine"> <span class="checkout-step-number">9</span>
+					<h4 class="checkout-step-title"> 
+						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine"  > 
+							Have you done any pro-bono work? If yes, then kindly provide details?
+						</a> 
+					</h4>
+				</div>
+				<div id="collapseNine" class="panel-collapse collapse" data-parent="#accordion">
+					<div class="checkout-inner">
+						<input class="form-control" type="text" name="strengths" id="strengths" placeholder="">
+					</div>
+					
+				</div>
+			</div>
+
+
+		</div>
+		
+	
+
+		
+	</div>
+</fieldset>
 
 					</div>
 				</form>
