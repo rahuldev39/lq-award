@@ -34,6 +34,11 @@
    <!-- Responsive styles-->
    <link rel="stylesheet" href="css/responsive.css">
 
+   <link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet" />
+
+  <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+  <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+
    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
    <!--[if lt IE 9]>
@@ -270,6 +275,42 @@
                <div class="col-md-6">
                   <img src="./images/about-img1.png" class="img-fluid" alt="">
                </div>
+              </div>
+            </div><!-- row end-->
+         </div><!-- container fluid end-->
+       </section>
+
+
+       <section class=" section">
+         <div class="container-fluid px-5">
+            <div class="block-content position-relative" style="background: linear-gradient(to bottom, #4c102a 0%, #151516 100%);">
+            <div class="row">
+               <div class="col-md-12"> 
+                 
+                  <h2 class="block-title mw-100 text-center text-white">
+                     legal Powerlist 2020
+                   </h2>
+
+                   <video
+                  id="legalpowerlist-video"
+                  class="video-js"
+                  controls
+                  preload="auto"
+                  
+                  poster="./video/video-poster.png"
+                  data-setup="{}"
+               >
+                  <source src="./video/legal-powerlist-video.mp4" type="video/mp4" />
+                  
+                  <p class="vjs-no-js">
+                     To view this video please enable JavaScript, and consider upgrading to a
+                     web browser that
+                     
+                  </p>
+               </video>
+                   
+               </div>
+               
               </div>
             </div><!-- row end-->
          </div><!-- container fluid end-->
@@ -730,7 +771,7 @@
       <script src="js/owl.carousel.min.js"></script>
       <!-- Waypoints -->
       <script src="js/wow.min.js"></script>
-    
+      <script src="https://vjs.zencdn.net/7.10.2/video.js"></script>
 
       <!-- Template custom -->
       <script src="js/main.js"></script>
