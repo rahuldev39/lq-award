@@ -2253,7 +2253,6 @@ img.pull-right {
 
 .pricing-item {
   position: relative;
-  max-width: 320px;
   margin: auto;
 }
 .pricing-item.disebled {
@@ -2266,7 +2265,7 @@ img.pull-right {
 }
 
 .ts-pricing-box {
-  background: #fff;
+  background: #ffffff2b;
   padding: 40px;
   text-align: center;
   -o-transition: all 0.4s ease;
@@ -2274,22 +2273,23 @@ img.pull-right {
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
   -ms-transition: all 0.4s ease;
+  border-radius: 18px;
 }
 .ts-pricing-box:hover {
   -webkit-box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.4);
   box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.4);
 }
 .ts-pricing-box .ts-pricing-header .ts-pricing-name {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 800;
-  color: #3b1d82;
+  color: #f9f9f9;
   text-transform: uppercase;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 .ts-pricing-box .ts-pricing-header .ts-pricing-price {
-  font-size: 42px;
+  font-size: 75px;
   font-weight: 900;
-  color: #3b1d82;
+  color: #ffffff;
   margin-bottom: 3px;
 }
 .ts-pricing-box .ts-pricing-header .ts-pricing-price span {
@@ -2299,6 +2299,9 @@ img.pull-right {
   font-weight: 700;
   color: #e7015e;
   margin-bottom: 25px;
+}
+.early-bird.ts-pricing-box .ts-pricing-header .ts-pricing-price {
+  color: #ffb26a;
 }
 .ts-pricing-box .ts-progress {
   width: 100%;
@@ -4433,12 +4436,12 @@ section.cateegory-header {
   top: 0px;
   left: calc(100% - 115px);
 }
-.assessment-section .block-content{
+.assessment-section .block-content {
   background: linear-gradient(150.47deg, rgb(89 12 115 / 69%) 18.08%, rgb(28 49 103 / 94%) 136.21%), url(../images/assessment-bg.png);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: contain;
-  padding-bottom: 200px;
+  padding-bottom: 95px;
 }
 .assessment-section .block-title{
   color: #FF1E79
@@ -5115,4 +5118,19 @@ select.form-control {
 }
 .header.sticky .top-bar{
   display: none;
+}
+
+.blur-section li, .blur-section p {
+  color: #ffffff00 !important;
+  text-shadow: 0 0 5px rgb(255 255 255);
+}
+
+.btn-view-more {
+  font-size: 14px;
+  border: 1px solid #ffd02e;
+  color: #ffd02e !important;
+  background-color: #fea32600 !important;
+}
+.blur-section .block-list li::before {
+  filter: blur(3px);
 }
