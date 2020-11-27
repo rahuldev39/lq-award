@@ -310,8 +310,9 @@ small device /mobile sm and large
   .navbar-toggler-icon {
     width: auto;
     height: auto; }
-  .navbar-brand img {
-    max-width: 130px; }
+    .navbar-brand img {
+      max-width: 268px;
+  }
   .header-transparent .navbar-toggler {
     background: #e7015e;
     color: #fff; }

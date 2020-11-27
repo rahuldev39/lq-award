@@ -5053,3 +5053,66 @@ section.cateegory-header {
   margin: 0 auto;
   height: 506px;
 }
+
+select.form-control {
+  appearance: none;
+  background-image: url(../images/down.svg);
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  padding-right: 48px;
+  background-size: 18px;
+}
+.home-banner .banner-item .btn.btn-register {
+  background-color: transparent !important;
+  color: white;
+  border-color: #e6e6e6;
+  border-width: 2px;
+}
+
+.video-link::after {
+  content: "\f04b";
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 15px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 4px;
+  color: #ffffff;
+  background-color: #e70b5e;
+  box-shadow: 1px 1px 2px #0613364a;
+  font-weight: 600;
+  opacity: .8;
+}
+.fancybox-bg {
+  background: #0a0422;
+}
+
+.top-bar {
+  background-color: black;
+  border-bottom: 1px solid #ffffff1c;
+}
+.top-bar a {
+  display: inline-block;
+  font-size: 13px;
+  color: white;
+}
+.top-bar .dot {
+  height: 5px;
+  width: 5px;
+  display: block;
+  background-color: #e70b5e;
+  border-radius: 50%;
+  margin: 0px 9px;
+}
+.header.sticky .top-bar{
+  display: none;
+}
