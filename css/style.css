@@ -5149,6 +5149,9 @@ select.form-control {
 .blur-section .block-list li::before {
   filter: blur(3px);
 }
+.pricing-container {
+  max-width: 540px;
+}
 @media(max-width:600px){
   .ts-pricing-header {
     display: block;
