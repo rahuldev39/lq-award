@@ -2300,8 +2300,9 @@ img.pull-right {
 .ts-pricing-box .ts-pricing-header .ts-pricing-price span {
   margin-right: 10px;
 }
-.ts-pricing-progress{
+.ts-pricing-progress {
   margin-left: auto;
+  display: flex;
 }
 .ts-pricing-progress p {
   font-size: 14px;
@@ -5150,14 +5151,35 @@ select.form-control {
   filter: blur(3px);
 }
 .pricing-container {
-  max-width: 540px;
+  max-width: 700px;
 }
-@media(max-width:600px){
+.btn-price-register {
+  text-transform: capitalize;
+  font-weight: 400;
+  height: auto;
+  padding: 2px 11px;
+  line-height: inherit;
+  background-color: #ffffff00 !important;
+  font-size: 13px;
+  border: 1px solid white;
+  margin-left: 13px;
+}
+@media(max-width:768px){
   .ts-pricing-header {
     display: block;
 }
 .ts-pricing-box .ts-pricing-header .ts-pricing-price {
   margin-left: 0px;
   text-align: left;
+}
+}
+@media(max-width:580px){
+  .ts-pricing-progress {
+    flex-direction: column;
+}
+  
+.btn-price-register{
+  order: -1;
+  margin-bottom: 10px;
 }
 }
