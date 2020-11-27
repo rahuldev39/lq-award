@@ -186,9 +186,7 @@ tab device
   .ts-pricing-item {
     margin-top: 85px; }
  
-  .pricing-item,
-  .location-form {
-    margin-bottom: 50px; }
+
   .speaker-shap {
     display: none; }
   .ts-funfact {
@@ -470,8 +468,7 @@ small device /mobile sm and large
     margin-bottom: 40px;
     font-size: 30px;
     line-height: 35px; }
-  .column-title,
-  .pricing-item {
+  .column-title {
     margin-bottom: 35px; }
   .speaker-shap {
     display: none; }
