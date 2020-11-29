@@ -5325,3 +5325,29 @@ blockquote:before {
 .video-gallery .grid-item img{
   width: 100%;
 }
+@media (max-width: 576px){
+.section .container-fluid {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+.home-banner .banner-item .btn {
+  height: 40px;
+  line-height: 40px;
+  padding: 0px 16px;
+}
+.banner-content-wrap h1.banner-title img {
+  width: 76% !important;
+}
+.banner-content-wrap .banner-info img {
+  width: 123px !important;
+}
+.hero-area.content-left .banner-item .banner-content-wrap .banner-info {
+  margin-bottom: 15px;
+}
+#legalpowerlist-video {
+  height: 249px;
+}
+.how-it-works .col-8{
+  
+}
+}
