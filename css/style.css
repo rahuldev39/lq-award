@@ -5161,8 +5161,12 @@ select.form-control {
 .blur-section .block-list li::before {
   filter: blur(3px);
 }
-.pricing-container {
+.pricing-container,.sub-category-section {
   max-width: 700px;
+}
+.sub-category-section  .sub-category-item{
+  background-image: linear-gradient(30deg, #214079 1%, #663A7E 55%, #A82B7D 100%);
+  border: 0px;
 }
 .btn-price-register {
   text-transform: capitalize;
