@@ -5318,3 +5318,10 @@ blockquote:before {
 .home-banner .banner-item .btn{
   margin-bottom: 5px;
 }
+.video-gallery .grid-item {
+  margin-bottom: 40px !important;
+  position: relative;
+}
+.video-gallery .grid-item img{
+  width: 100%;
+}
