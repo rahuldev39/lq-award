@@ -1533,17 +1533,11 @@ img.pull-right {
 }
 .ts-speaker .ts-title a {
   color: #ffffff;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
   display: block;
 }
-.ts-speaker:hover .speaker-img img {
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
-}
-.ts-speaker:hover .speaker-img:before {
-  opacity: 1;
-}
+
+
 .ts-speaker:hover .view-speaker {
   top: 50%;
   opacity: 1;
@@ -1561,6 +1555,8 @@ img.pull-right {
 }
 .speaker-classic .ts-speaker {
   margin-bottom: 58px;
+  overflow: hidden;
+  border-radius: 20px;
 }
 .speaker-classic .ts-speaker .speaker-img {
   width: 100%;
@@ -1570,26 +1566,38 @@ img.pull-right {
   -ms-border-radius: 0;
 }
 .speaker-classic .ts-speaker .ts-speaker-info {
-  /* position: absolute; */
   right: 0;
-  bottom: -42px;
   background: #181818;
   z-index: 1;
-  /* width: 90%; */
-  padding: 20px 0 10px;
-  text-align: right;
-  padding-right: 23px;
-  min-height: 104px;
+  padding: 0px;
+  text-align: center;
+  padding-right: 0px;
+  position: relative;
 }
 .speaker-classic .ts-speaker .ts-speaker-info .ts-title {
   margin-bottom: 0;
+  position: relative;
+  z-index: 10;
+  background-color: #181818;
+  padding: 20px 0px;
 }
 .speaker-classic .ts-speaker .ts-speaker-info p {
+  font-weight: 200;
   margin-bottom: 0;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 24px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  padding: 11px 10px;
+  background-color: #040510e8;
+  bottom: -37px;
+  color: #ffffffc2;
+  transition: all ease-in-out 300ms;
 }
-
+.speaker-classic .ts-speaker:hover .ts-speaker-info p {
+  bottom: 100%;
+}
 .speaker-shap img {
   position: absolute;
   left: 0;
