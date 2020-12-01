@@ -4746,6 +4746,8 @@ section.cateegory-header {
   background-color: #0303038c;
   left: 0px;
   top: 0px;
+  background-image: linear-gradient(30deg, #0c0d42 1%, #210b2f 55%, #000000 100%);
+  opacity: .9;
 }
 
 .login-bg .banner-content-wrap{
@@ -5350,4 +5352,52 @@ blockquote:before {
 .how-it-works .col-8{
   
 }
+}
+.register-category .single-intro-text {
+  padding: 18px 15px 17px 15px;
+  background-color: transparent;
+  display: flex;
+}
+.register-category .single-intro-text p {
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #03030370;
+  padding: 10px 14px;
+  flex: 1;
+}
+.register-category{
+  max-width: 575px;
+  margin: 0 auto;
+}
+
+.register-category .ts-title {
+  font-size: 13px;
+  margin-bottom: 0px;
+  display: inline-block;
+  font-weight: 400;
+  padding: 5px 11px;
+  background-color: #4d5bed57;
+  display: flex;
+  align-items: center;
+}
+.animated-btn{
+  animation: btn-animate 400ms ease-in-out infinite;
+}
+.animated-btn:hover{
+  animation-play-state: paused;
+}
+@keyframes btn-animate{
+  0% {
+    background-color: #4d5bed ;
+    transform: scale(1);
+  }
+  50% {
+    background-color: #ff007a;
+    transform: scale(1.1);
+  }
+  100% {
+    background-color: #4d5bed ;
+    transform: scale(1);
+  }
 }
