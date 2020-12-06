@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Dashboard</title>
+        <!-- Template styles-->
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <!-- FontAwesome -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/dropzone.min.css">
+
+        <link rel="stylesheet" href="css/blue-theme.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <link rel="stylesheet" href="css/admin.css">
+    </head>
+    <body class="sb-nav-fixed blue-theme bg-black">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/fi-lq-logo.png" width="300" alt="">
+            </a>
+           
+       
+            <!-- Navbar-->
+            <ul class="navbar-nav ml-auto ">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-fw"></i></a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                        <a class="dropdown-item" href="#">Settings</a>
+                        <a class="dropdown-item" href="#">Activity Log</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="login.html">Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div id="layoutSidenav">
+           
+            <div id="layoutSidenav_content">
+                <main class="pt-5 px-4">
+                    <div class="row">
+                        <div class="col-md-2">
+                          <div class="nav flex-md-column flex-row nav-pills mb-4 mb-md-0" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Individual</a>
+                            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Corporate</a>
+                          </div>
+                        </div>
+                        <div class="col-md-10">
+                          <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                
+                                <div class="card mb-5">
+                                    <div class="card-header">
+                                      Upload Files
+                                    </div>
+                                    <div class="card-body">
+                                      
+                                     
+                                      <form action="/file-upload" class="dropzone">
+                                        <div class="fallback">
+                                          <input name="file" type="file" multiple />
+                                        </div>
+                                      </form>
+            
+                                      <div class="upload-list">
+                                        <ul class="list-unstyled">
+                                            <li>
+                                               <div class="d-flex upload-item">
+                                                    <div class="file-info d-flex">
+                                                        <div class="file-icon">
+                                                            <img src="./images/pdf.svg" width="40" alt="">
+                                                        </div>
+                                                        <div>
+                                                            <h4>Filename.pdf</h4>
+                                                            <span>124KB</span>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div class="del-file ml-auto">
+                                                        <button class="btn btn-link">
+                                                            <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                                        </button>
+                                                    </div>
+                                               </div> 
+                                            </li>
+            
+                                            <li>
+                                                <div class="d-flex upload-item">
+                                                     <div class="file-info d-flex flex-fill mr-5">
+                                                         <div class="file-icon">
+                                                             <img src="./images/mp4.svg" width="40" alt="">
+                                                         </div>
+                                                         <div class="flex-fill">
+                                                             <h4>Filename.pdf</h4>
+                                                             <div class="progress" style="height: 6px;">
+                                                                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                              </div>
+                                                             <span>88% Done</span>
+                                                         </div>
+                                                         
+                                                     </div>
+                                                     <div class="del-file ml-auto">
+                                                         <button class="btn btn-link">
+                                                             <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                                         </button>
+                                                     </div>
+                                                </div> 
+                                             </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Email</a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Own Create</a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                      <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Upload</a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link" id="user-listing-tab" data-toggle="tab" href="#user-listing" role="tab" aria-controls="contact" aria-selected="false">User List</a>
+                                      </li>
+                                  </ul>
+                                  <div class="tab-content corporate-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                        
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="">To</label>
+                                                    <input type="text" class="form-control" name="" id="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="form-group">
+                                                    <label for="">Message</label>
+                                                    <textarea name="" id="" class="form-control" cols="30" rows="5"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <button class="btn">Send Message</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                        <div class="fieldset-content">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>Name</label>
+                                                        <input class="form-control" type="text" name="name" placeholder="Enter Name"> 	 	
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>Email</label>
+                                                        <input class="form-control" type="text" name="name" placeholder="Enter Email"> 	
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>Password</label>
+                                                        <input class="form-control" type="text" name="name" placeholder="Enter Password"> 	
+                                                    </div>
+                                                </div>
+                                            </div>
+            
+                                            <div class="add-new-container mb-4">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label>Name</label>
+                                                            <input class="form-control" type="text" name="name" placeholder="Enter Name"> 	 	
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label>Email</label>
+                                                            <input class="form-control" type="text" name="name" placeholder="Enter Email"> 	
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label>Password</label>
+                                                            <input class="form-control" type="text" name="name" placeholder="Enter Password"> 	
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <button class="remove-btn">
+                                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                                </button>
+                                            </div>
+            
+                                          
+            
+            
+                                            <div class="add">
+            
+                                                <button class="btn btn-sm px-3">
+                                                    <i class="fa fa-plus mr-2" aria-hidden="true"></i> Add More</button>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                    
+                                        <form action="/file-upload" class="dropzone">
+                                            <div class="fallback">
+                                              <input name="file" type="file" multiple />
+                                            </div>
+                                          </form>
+                
+                                          <div class="upload-list">
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                   <div class="d-flex upload-item">
+                                                        <div class="file-info d-flex">
+                                                            <div class="file-icon">
+                                                                <img src="./images/pdf.svg" width="40" alt="">
+                                                            </div>
+                                                            <div>
+                                                                <h4>Filename.pdf</h4>
+                                                                <span>124KB</span>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                        <div class="del-file ml-auto">
+                                                            <button class="btn btn-link">
+                                                                <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                                            </button>
+                                                        </div>
+                                                   </div> 
+                                                </li>
+                
+                                                <li>
+                                                    <div class="d-flex upload-item">
+                                                         <div class="file-info d-flex flex-fill mr-5">
+                                                             <div class="file-icon">
+                                                                 <img src="./images/mp4.svg" width="40" alt="">
+                                                             </div>
+                                                             <div class="flex-fill">
+                                                                 <h4>Filename.pdf</h4>
+                                                                 <div class="progress" style="height: 6px;">
+                                                                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                  </div>
+                                                                 <span>88% Done</span>
+                                                             </div>
+                                                             
+                                                         </div>
+                                                         <div class="del-file ml-auto">
+                                                             <button class="btn btn-link">
+                                                                 <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                                             </button>
+                                                         </div>
+                                                    </div> 
+                                                 </li>
+                                            </ul>
+                                          </div>
+                                    
+                                    </div>
+
+
+                                    <div class="tab-pane fade" id="user-listing" role="tabpanel" aria-labelledby="user-listing-tab">
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <thead class="thead-dark">
+                                                  <tr>
+                                                    <th scope="col">#</th>
+                                                    <th scope="col">First</th>
+                                                    <th scope="col">Last</th>
+                                                    <th scope="col">Handle</th>
+                                                    <th width="40"></th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <td scope="row">1</td>
+                                                    <td>Mark</td>
+                                                    <td>Otto</td>
+                                                    <td>@mdo</td>
+                                                    <td>
+                                                        <button class="btn expand-btn">
+                                                            <i class="fa" aria-hidden="true"></i>
+                                                        </button>
+                                                    </td>
+                                                  </tr>
+                                                  <tr class="expandable-row" style="display:none">
+                                                    <td class="p-0" colspan="5">
+                                                        <div class="table-responsive">
+                                                            <table class="table mb-0">
+                                                                <tbody>
+                                                                    <tr>
+                                                                      <td scope="row">1</td>
+                                                                      <td>Mark</td>
+                                                                      <td>Otto</td>
+                                                                      <td>@mdo</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                      
+                                                    </td>
+                                                </tr>
+                                                  <tr>
+                                                    <td scope="row">2</td>
+                                                    <td>Jacob</td>
+                                                    <td>Thornton</td>
+                                                    <td>@fat</td>
+                                                    <td>
+                                                        <button class="btn expand-btn">
+                                                            <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                                        </button>
+                                                    </td>
+                                                  </tr>
+                                                  <tr class="expandable-row" style="display:none">
+                                                    <td class="p-0" colspan="5">
+                                                        <div class="table-responsive">
+                                                            <table class="table mb-0">
+                                                                <tbody>
+                                                                    <tr>
+                                                                      <td scope="row">1</td>
+                                                                      <td>Mark</td>
+                                                                      <td>Otto</td>
+                                                                      <td>@mdo</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                      
+                                                    </td>
+                                                </tr>
+                                                  <tr>
+                                                    <td scope="row">3</td>
+                                                    <td>Larry</td>
+                                                    <td>the Bird</td>
+                                                    <td>@twitter</td>
+                                                    <td>
+                                                        <button class="btn expand-btn">
+                                                            <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                                        </button>
+                                                    </td>
+                                                  </tr>
+                                                  <tr class="expandable-row" style="display:none">
+                                                    <td class="p-0" colspan="5">
+                                                        <div class="table-responsive">
+                                                            <table class="table mb-0">
+                                                                <tbody>
+                                                                    <tr>
+                                                                      <td scope="row">1</td>
+                                                                      <td>Mark</td>
+                                                                      <td>Otto</td>
+                                                                      <td>@mdo</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                      
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                              </table>
+                                              
+                                             
+                                        </div>
+                                    </div>
+                                  </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    
+                </main>
+                <footer class="py-3   mt-auto">
+                    <div class="container-fluid">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Copyright &copy; Your Website 2020</div>
+                            <div>
+                                <a href="#">Privacy Policy</a>
+                                &middot;
+                                <a href="#">Terms &amp; Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="./js/jquery.min.js"></script>
+
+      <script src="js/popper.min.js"></script>
+      <!-- Bootstrap jQuery -->
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/dropzone.min.js"></script>
+      <script src="js/scripts.js"></script>
+
+      <script>
+          $("div#myId").dropzone({ url: "/file/post" });
+      </script>
+
+      <script>
+
+        $('.expand-btn').click(function() {
+           $(this).toggleClass('open')
+           $(this).closest('tr').next('.expandable-row').fadeToggle()
+           
+        });
+      </script>
+
+    </body>
+</html>
