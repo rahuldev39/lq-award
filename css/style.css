@@ -2390,15 +2390,14 @@ img.pull-right {
 .ts-pricing-box .vate-text {
   margin-bottom: 0;
 }
-
 .ts-pricing-item {
   text-align: center;
-  background: #fff;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -ms-border-radius: 5px;
   padding: 40px;
   margin-top: 50px;
+  background: #151516;
 }
 .ts-pricing-item .ts-pricing-header i {
   font-size: 70px;
@@ -2418,7 +2417,7 @@ img.pull-right {
 .ts-pricing-item .ts-pricing-name {
   font-size: 24px;
   font-weight: 700;
-  color: #3b1d82;
+  color: #ffffff;
   margin-bottom: 35px;
 }
 .ts-pricing-item .ts-pricing-price {
@@ -5408,4 +5407,33 @@ blockquote:before {
     background-color: #4d5bed ;
     transform: scale(1);
   }
+}
+
+
+.pricing-detail {
+  padding: 30px 0px;
+  border-top: 1px solid #ffffff12;
+}
+.details-items h4 {
+  color: white;
+}
+.details-items strong {
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.details-items span {
+  /* font-size: 18px; */
+  color: #ffb26a;
+  font-weight: 500;
+}
+.details-items span.original {
+  text-decoration: line-through;
+  margin-right: 6px;
+  opacity: .6;
+  font-weight: unset;
+  font-size: 15px;
+}
+.details-items > div{
+
 }
