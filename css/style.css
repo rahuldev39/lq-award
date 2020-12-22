@@ -855,7 +855,7 @@ img.pull-right {
   background-position: center center;
   -webkit-backface-visibility: hidden;
   position: relative;
-  padding-top: 130px;
+  padding-top: 80px;
   padding-bottom: 70px;
 }
 .banner-item:before {
@@ -5436,4 +5436,39 @@ blockquote:before {
 }
 .details-items > div{
 
+}
+.imp-dates {
+  padding: 12px 0px;
+  margin-top: 20px;
+  border-top: 1px solid #ffffff1a;
+  border-bottom: 1px solid #ffffff1a;
+}
+.imp-dates .dates {
+  flex: 1;
+}
+.imp-dates .dates:first-child {
+  border-right: 1px solid #ffffff1a;
+  margin-right: 40px;
+}
+.imp-dates .dates strong {
+  display: block;
+  font-weight: 100;
+  font-size: 12px;
+  line-height: 15px;
+  margin-bottom: 8px;
+}
+.imp-dates .dates span {
+  color: #e7015e;
+  display: block;
+  font-weight: 700;
+  line-height: 16px;
+}
+.banner-content-wrap .banner-info img{
+  max-width: 150px;
+}
+.banner-content-wrap .banner-title img{
+  max-width: 300px;
+}
+.banner-content-wrap .lq-logo img{
+  max-width: 180px;
 }
