@@ -386,3 +386,51 @@
 transform: scale(1.03);
 }
 
+
+
+
+.card-login {
+  margin-top: 130px;
+  padding: 18px;
+  max-width: 30rem;
+  background-color: rgba(29,29,31,0.72);
+  border-bottom: 1px solid #ffffff12;
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  box-shadow: 0px 0px 0px 100vw #000000a1;
+}
+
+
+.card-login .input-group-prepend span {
+  width: 50px;
+  background-color: #ffffff;
+  color: #fff;
+  border: 0 !important;
+  height: 46px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3c3069;
+  border-radius: 5px 0px 0px 5px;
+}
+.login-logo{
+  border-bottom: 1px solid #ffffff0f;
+    padding-bottom: 22px;
+}
+
+.login_btn{
+  width: 130px;
+}
+
+
+
+
+
+
+
+
+.jury-login-bg{
+  background-image: url(../images/law-bg.png);
+  background-size: cover;
+}
