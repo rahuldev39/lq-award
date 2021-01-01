@@ -379,3 +379,10 @@
 .table td .table td {
   background-color: #131313;
 }
+#layoutSidenav_content .single-intro-text{
+  transition: all ease-in-out 300ms;
+}
+#layoutSidenav_content .single-intro-text:hover{
+transform: scale(1.03);
+}
+
