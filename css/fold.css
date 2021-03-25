@@ -307,7 +307,7 @@ Main content
     display: none;
   }
   .cd-folding-panel .fold-left::after {
-    background-color: #f9fafa;
+    background-color: #f2f4f8;
   }
   .cd-folding-panel .cd-close {
     /* 'X' close icon */
@@ -374,7 +374,7 @@ Main content
     transition: transform 0.5s 0s, background-color 0.5s 0s;
   }
   .cd-folding-panel.is-open .fold-right::after {
-    background-color: #f9fafa;
+    background-color: #f2f4f8;
   }
   .cd-folding-panel.is-open .cd-close {
     opacity: 1;
@@ -527,7 +527,7 @@ Main content
   }
   @media only screen and (min-width: 1100px) {
     .cd-fold-content {
-      padding: 4em;
+      padding:2rem 3em;
     }
     .cd-fold-content > * {
       -webkit-transform: translateY(40px);
