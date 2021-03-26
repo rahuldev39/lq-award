@@ -137,22 +137,40 @@
                   </div>
                </a>
             </li>
-   
-            <li class="cd-item cd-item2">
-               <a href="winner-2.html">
-                  <div>
-                     <span>Top 100</span>
-                     <h2>Individual lawyers</h2>
-                     <b>View Winners</b>
-                  </div>
-               </a>
-            </li>
-   
             <li class="cd-item cd-item3">
                <a class="" href="winner-3.html">
                   <div>
                      <span>Top 50</span>
                      <h2>Managing partners</h2>
+                     <b>View Winners</b>
+                  </div>
+               </a>
+            </li>
+
+            <li class="cd-item cd-item5">
+               <a href="winner-5.html">
+                  <div>
+                     <span>Top 50</span>
+                     <h2>General Counsel</h2>
+                     <b>View Winners</b>
+                  </div>
+               </a>
+            </li>
+
+            <li class="cd-item cd-item6">
+               <a href="winner-6.html">
+                  <div>
+                     <span>Top 25</span>
+                     <h2>Law schools</h2>
+                     <b>View Winners</b>
+                  </div>
+               </a>
+            </li>
+            <li class="cd-item cd-item2">
+               <a href="winner-2.html">
+                  <div>
+                     <span>Top 100</span>
+                     <h2>Individual lawyers</h2>
                      <b>View Winners</b>
                   </div>
                </a>
@@ -168,25 +186,8 @@
                </a>
             </li>
 
-            <li class="cd-item cd-item5">
-               <a href="winner-5.html">
-                  <div>
-                     <span>Top 50</span>
-                     <h2>General Counsel</h2>
-                     <b>View Winners</b>
-                  </div>
-               </a>
-            </li>
+         
    
-            <li class="cd-item cd-item6">
-               <a href="winner-6.html">
-                  <div>
-                     <span>Top 25</span>
-                     <h2>Law schools</h2>
-                     <b>View Winners</b>
-                  </div>
-               </a>
-            </li>
          </ul> <!-- .cd-gallery -->
 
          <div class="cd-overlay"></div>
@@ -200,98 +201,10 @@
          <div class="fold-right"></div> <!-- this is the right fold -->
          
          <div class="cd-fold-content">
-            <div class="text-center pb-1">
-               <span>Top 25</span>
-             <h3 class="cd-folding-panel-heading mb-0">In-House Lawyers</h3>
-           </div>
-           <p><button onclick="sortTable()">Sort</button></p>
-           <hr class="my-4">
-            <div class="table-responsive">
-               <table class="table table-padded winner-table" id="winner-table">
-                  <thead>
-                    <tr>
-                      <th>Name of In-House Counsel</th>
-                      <th>Company Name</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                     
-                      <td>
-                        <div class="user-with-avatar d-flex align-items-center">
-                           <img class="mr-3" alt="" src="images/person/person.jpg"> 
-                           <span >Aravind Varma</span>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="smaller lighter">WeWork</div>
-                      </td>
-                    </tr>
-                    <tr>
-                     
-                      <td>
-                        <div class="user-with-avatar d-flex align-items-center">
-                           <img class="mr-3" alt="" src="images/person/person_1.jpg"> 
-                           <span > Sivarama Krishna Prakash <br>
-                             <small class="text-muted">Veteran Wing Commander</small>
-                           </span>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="smaller lighter">Cisco System India Private Limited</div>
-                      </td>
-                    </tr>
-                    <tr>
-                     
-                      <td>
-                        <div class="user-with-avatar d-flex align-items-center">
-                           <img class="mr-3" alt="" src="images/person/person_2.jpg"> 
-                           <span >Aakansha Munjhal</span>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="smaller lighter">Walmart India Pvt. Ltd.</div>
-                      </td>
-                    </tr>
-                    <tr>
-                      
-                      <td>
-                        <div class="user-with-avatar d-flex align-items-center">
-                           <img class="mr-3" alt="" src="images/person/person_3.jpg"> 
-                           <span >Shine Joy</span>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="smaller lighter">Frontizo Business Services Private Limited</div>
-                      </td>
-                    </tr>
-                    <tr>
-                     
-                      <td>
-                        <div class="user-with-avatar d-flex align-items-center">
-                           <img class="mr-3" alt="" src="images/person/person.jpg"> 
-                           <span >Krisshna</span>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="smaller lighter">TikTok</div>
-                      </td>
-                    </tr>
-                    <tr>
-                     
-                      <td>
-                        <div class="user-with-avatar d-flex align-items-center">
-                           <img class="mr-3" alt="" src="images/person/person_1.jpg"> 
-                           <span >Pallavi Taneja</span>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="smaller lighter">Kotak Mahindra Bank Ltd</div>
-                      </td>
-                    </tr>
-                  </tbody>
-               </table>
-             </div>
+            
+           
+
+             
          </div>
    
          <a class="cd-close" href="#0"></a>
@@ -380,17 +293,20 @@
    </div>
    <!-- Body inner end -->
 
-   <!-- <script>
+   <script>
       function sortTable() {
-        var table, rows, switching, i, x, y, shouldSwitch;
-        table = document.getElementById("winner-table");
-        switching = true;
+        var table, rows, switching, i, x, y,t, shouldSwitch;
+        table = document.getElementsByClassName("winner-table");
+         
+        for (t = 0; t < table.length ; t++) {
+         switching = true;
         /*Make a loop that will continue until
         no switching has been done:*/
         while (switching) {
           //start by saying: no switching is done:
           switching = false;
-          rows = table.rows;
+          rows = table[t].rows;
+          console.log(rows)
           /*Loop through all table rows (except the
           first, which contains table headers):*/
           for (i = 1; i < (rows.length - 1); i++) {
@@ -398,13 +314,14 @@
             shouldSwitch = false;
             /*Get the two elements you want to compare,
             one from current row and one from the next:*/
-            x = rows[i].getElementsByTagName("span")[0];
-            y = rows[i + 1].getElementsByTagName("span")[0];
+       
+            x = $(rows[i]).find('td:eq(0) span').text().trim();
+            y = $(rows[i+1]).find('td:eq(0) span').text().trim();
             //check if the two rows should switch place:
-            if (x.textContent.toLowerCase() > y.textContent.toLowerCase()) {
+            if (x.toLowerCase() > y.toLowerCase()) {
               //if so, mark as a switch and break the loop:
               shouldSwitch = true;
-              console.log(x.textContent, y.textContent)
+              
               break;
             }
           }
@@ -415,10 +332,14 @@
             switching = true;
           }
         }
+
+        }
+
+        
       };
       sortTable()
       
-      </script> -->
+      </script>
 
 </body>
 
