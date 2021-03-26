@@ -5530,3 +5530,13 @@ blockquote:before {
 .cd-folding-panel-heading {
   font-weight: 900;
 }
+
+@media(min-width:992px){
+  .table .user-with-avatar img {
+    width: 50px;
+    height: 50px;
+}
+.user-with-avatar span {
+  font-size: 18px;
+}
+}
