@@ -303,7 +303,6 @@
         //start by saying: no switching is done:
         switching = false;
         rows = table[t].rows;
-        console.log(rows)
         /*Loop through all table rows (except the
         first, which contains table headers):*/
         for (i = 1; i < (rows.length - 1); i++) {
@@ -341,7 +340,7 @@
       $('.cd-item a').on('click', function(){
          setTimeout(function(){
             sortTable()
-         
+         console.log('hi')
           }, 3000);
         
       })
