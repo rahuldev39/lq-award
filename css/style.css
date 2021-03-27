@@ -847,7 +847,7 @@ img.pull-right {
   line-height: 30px;
 }
 .banner-item {
-  min-height: 445px;
+
   color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1124,7 +1124,7 @@ img.pull-right {
 }
 
 .hero-area.content-left .banner-item {
-  min-height: 650px;
+
   -webkit-box-shadow: 0px 100px 100px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 100px 100px 0px rgba(0, 0, 0, 0.2);
   background-position: top center;
@@ -5539,4 +5539,27 @@ blockquote:before {
 .user-with-avatar span {
   font-size: 18px;
 }
+}
+
+.banner-links a {
+  position: absolute;
+  display: inline-block;
+  height: 6%;
+}
+.banner-links a.links1 {
+  top: 57%;
+  left: 35%;
+  width: 34%;
+}
+.banner-links a.links2 {
+  top: 72.3%;
+  width: 14%;
+  left: 35%;
+}
+.banner-img{
+  position: relative;
+}
+
+.banner-links a:hover {
+  background-color: #00000047;
 }
